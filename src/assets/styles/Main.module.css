@@ -7,55 +7,23 @@
     width: 100%;
     max-width: 1440px;
     position: relative;
-    padding: 45px 100px 100px 100px;
+    padding: 70px 50px 50px 50px;
 }
 
-.baobab-left {
-    top: 1000px;
-    left: -500px;
+.topContainer{
+    height: calc(100vh - 70px);
 }
 
-.baobab-right {
-    top: 1000px;
-    right: -500px;
-}
-
-.top-container {
-    height: 100vh;
+.up {
+    height: 90%;
+    padding-bottom: 50px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    column-gap: 25px;
 }
 
-@keyframes frameMove {
-    0% {
-        transform: translate(0);
-    }
-    100% {
-        transform: translate(-50px,-50px);
-    }
-}
-
-.frame-left {
-    width: 305px;
-    height: 305px;
-    animation: frameMove 1000ms  500ms forwards;
-}
-
-.image-left {
-    width: 298px;
-    height: 298px;
-    z-index: 10;
-    transform: translate(3px,3px);
-}
-
-.div-right {
-    height: 65%;
+.leftContent {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
+    align-items: end;
 }
 
 .title {
@@ -63,15 +31,58 @@
     font-size: 85px;
 }
 
-.subtitle {
-    font-size: 30px;
+.imgContainer {
+    height: 50%;
 }
 
-.links-container {
-    height: 50px;
+.img {
+    height: 300px;
+    width: 250px;
+    object-fit: contain;
+}
+
+.subtitles {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.linksContainer {
+    position: relative;
+    height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
+    list-style-type: none;
+}
+
+.linkItem{
+    width: 140px;
+    position: absolute;
+    background-color: var(--color-grey);
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    text-decoration: none;
+}
+
+.link1{
+    animation: link1 1000ms 500ms forwards cubic-bezier(.63,.22,.49,.95);
+}
+.link2{
+    animation: link2 1000ms 500ms forwards cubic-bezier(.63,.22,.49,.95);
+}
+.link3{
+    animation: link3 1000ms 500ms forwards cubic-bezier(.63,.22,.49,.95);
+}
+.link4{
+    animation: link4 1000ms 500ms forwards cubic-bezier(.63,.22,.49,.95);
 }
 
 @keyframes link1 {
@@ -79,7 +90,7 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(25px);
+        transform: translateX(-240px);
     }
 }
 @keyframes link2 {
@@ -87,7 +98,7 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(75px);
+        transform: translateX(-80px);
     }
 }
 @keyframes link3 {
@@ -95,7 +106,7 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-25px);
+        transform: translateX(240px);
     }
 }
 @keyframes link4 {
@@ -103,20 +114,21 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-75px);
+        transform: translateX(80px);
     }
 }
-.link-1 {
-    animation: link1 1000ms 500ms forwards cubic-bezier(.63,.22,.49,.95);
+
+/*  Baoba Images*/
+.baobabLeft {
+    position: absolute;
+    top: 1000px;
+    left: -500px;
 }
-.link-2 {
-    animation: link2 1000ms 500ms forwards cubic-bezier(.63,.22,.49,.95);
-}
-.link-3 {
-    animation: link3 1000ms 500ms forwards cubic-bezier(.63,.22,.49,.95);
-}
-.link-4 {
-    animation: link4 1000ms 500ms forwards cubic-bezier(.63,.22,.49,.95);
+
+.baobabRight {
+    position: absolute;
+    top: 1000px;
+    right: -500px;
 }
 
 .box-container {

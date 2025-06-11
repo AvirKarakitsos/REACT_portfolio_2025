@@ -8,7 +8,11 @@
     },
     "main": {
         "part1": {
-            "subtitle": "Web Developer"
+            "title1": "Web",
+            "title2": "Developer",
+            "subtitle1": "Full Stack developer",
+            "subtitle2": "React + Node",
+            "subtitle3": "Self-taught"
         },
         "about": {
             "tab": "About me",

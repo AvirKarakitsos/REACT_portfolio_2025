@@ -8,7 +8,11 @@
     },
     "main": {
         "part1": {
-            "subtitle": "Développeur Web"
+            "title1": "Développeur",
+            "title2": "Web",
+            "subtitle1": "Développeur Full Stack",
+            "subtitle2": "React + Node",
+            "subtitle3": "Autodidacte"
         },
         "about": {
             "tab": "A propos",

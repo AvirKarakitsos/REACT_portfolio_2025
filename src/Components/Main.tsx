@@ -1,9 +1,9 @@
 import styles from '../assets/styles/Main.module.css'
 import photo from '../assets/images/photo-baobab.png'
-import github from '../assets/images/github.png'
-import twitter from '../assets/images/x-logo.jpg'
-import linkedin from '../assets/images/linkedin.png'
-import gmail from '../assets/images/gmail.png'
+import github from '../assets/images/github.svg'
+import twitter from '../assets/images/twitter.svg'
+import linkedin from '../assets/images/linkedin.svg'
+import instagram from '../assets/images/instagram.svg'
 import baobabBlack from '../assets/images/baobab_black.svg'
 import baobabWhite from '../assets/images/baobab_white.svg'
 
@@ -61,30 +61,37 @@ function Main() {
                 {
                     theme === "light"
                         ? <>
-                            <img src={baobabBlack} alt="baobab" className={`absolute ${styles["baobab-left"]}`}/>
-                            <img src={baobabBlack} alt="baobab" className={`absolute ${styles["baobab-right"]}`}/>            
+                            <img src={baobabBlack} alt="baobab" className={styles.baobabLeft}/>
+                            <img src={baobabBlack} alt="baobab" className={styles.baobabRight}/>            
                         </>
                         : <>
-                            <img src={baobabWhite} alt="baobab" className={`absolute ${styles["baobab-left"]}`}/>
-                            <img src={baobabWhite} alt="baobab" className={`absolute ${styles["baobab-right"]}`}/>
+                            <img src={baobabWhite} alt="baobab" className={styles.baobabLeft}/>
+                            <img src={baobabWhite} alt="baobab" className={styles.baobabRight}/>
                         </>
                 }
 
-                <section className={styles["top-container"]}>
-                    <div className="relative">
-                        <div className={`${styles["frame-left"]} absolute ${theme === "light" ? "border-black" : "border-white"}`}></div>
-                        <img className= {`${styles["image-left"]} relative`}  src={photo} alt="Allée de baobabs à Madagascar"/>
+                <section className={styles.topContainer}>
+                    <div className={styles.up}>
+                        <div className={styles.leftContent}>
+                            <h1 className={styles.title}>{translate(lang).main.part1.title1}<br/>{translate(lang).main.part1.title2}</h1>
+                        </div>
+                        <div className={styles.rightContent}>
+                            <div className={styles.imgContainer}>
+                                <img src={photo} alt="Allée de baobabs à Madagascar" className={styles.img}/>
+                            </div>
+                            <div className={styles.subtitles}>
+                                <p>{translate(lang).main.part1.subtitle1}</p>
+                                <p>{translate(lang).main.part1.subtitle2}</p>
+                                <p>{translate(lang).main.part1.subtitle3}</p>
+                            </div>
+                        </div>
                     </div>
-                    <div className={styles["div-right"]}>
-                        <h1 className={styles["title"]}>Arno Cotsoyannis</h1>
-                        <h2 className={styles.subtitle}>{translate(lang).main.part1.subtitle}</h2>
-                        <ul className={`${styles["links-container"]} no-bullet relative`}>
-                            <li className={`${styles["link-1"]} absolute`}><a href="https://github.com/AvirKarakitsos" target="_blank" rel="noopener noreferrer"><img height={30} width={30} className="border-cercle" src={github} alt="lien github"/></a></li>
-                            <li className={`${styles["link-2"]} absolute`}><a href="https://www.linkedin.com/in/arno-c-b9b56531a/" target="_blank" rel="noopener noreferrer"><img height={30} width={30} className="border-cercle" src={linkedin} alt="lien instagram"/></a></li>
-                            <li className={`${styles["link-3"]} absolute`}><a href="https://twitter.com/AvirKarakitsos" target="_blank" rel="noopener noreferrer"><img height={30} width={30} className="border-cercle" src={twitter} alt="lien twitter"/></a></li>
-                            <li className={`${styles["link-4"]} absolute`}><img height={30} width={30} className="border-cercle" onClick={() => alert('arnocotso8@gmail.com')} src={gmail} alt="email"/></li>
-                        </ul>
-                    </div>
+                    <ul className={styles.linksContainer}>
+                        <li className={`btn ${styles.linkItem} ${styles.link1}`}><a className={styles.link} href="https://github.com/AvirKarakitsos" target="_blank" rel="noopener noreferrer"><img height={25} width={25} src={github} alt="lien github"/>Github</a></li>
+                        <li className={`btn ${styles.linkItem} ${styles.link2}`}><a className={styles.link} href="https://www.linkedin.com/in/arno-c-b9b56531a/" target="_blank" rel="noopener noreferrer"><img height={25} width={25} src={linkedin} className={styles.imgLogo} alt="lien linkedin"/>Linkedin</a></li>
+                        <li className={`btn ${styles.linkItem} ${styles.link3}`}><a className={styles.link} href="https://twitter.com/AvirKarakitsos" target="_blank" rel="noopener noreferrer"><img height={18} width={18} src={twitter} alt="lien twitter"/>X/Twitter</a></li>
+                        <li className={`btn ${styles.linkItem} ${styles.link4}`}><a className={styles.link} href="https://www.instagram.com/avir.karakitsos/" target="_blank" rel="noopener noreferrer"><img height={25} width={25} src={instagram} alt="lien instagram"/>Instagram</a></li>
+                    </ul>
                 </section>
 
                 <Information/>
