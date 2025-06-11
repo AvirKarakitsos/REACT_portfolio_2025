@@ -1,0 +1,41 @@
+{
+    "header": {
+        "about": "A propos",
+        "projects": "Mes projets",
+        "contact": "Contact",
+        "login": "Se Connecter",
+        "mode": "Mode"
+    },
+    "main": {
+        "part1": {
+            "subtitle": "Développeur Web"
+        },
+        "about": {
+            "tab": "A propos",
+            "subtitle": "Mon Parcours",
+            "content_1": "En reconversion développeur web. Après m'être auto formé en apprenant les bases de HTML, CSS et Javascript, j'ai suivi en 2023 la formation Openclassrooms développeur web afin de professionnaliser ma démarche et ainsi devenir développeur fullstack.",
+            "content_2": "En scrollant sur cette page vous découvrirez mes projets personnels ainsi que mes projets chez Openclassrooms. Vous pouvez cliquez sur l'image afin de visionner une démonstration du site. L'ensemble du code est disponible sur mon github."
+        },
+        "skills": {
+            "tab": "Compétences",
+            "subtitle": "Mes Compétences",
+            "server": "serveur",
+            "tools": "base de données"
+        },
+        "projects": {
+            "subtitle": "Mes Projets",
+            "categories": {
+                "all": "Tous",
+                "fullstack": "Full Stack",
+                "react": "React JS",
+                "node": "Node JS"
+            },
+            "sort": ["les plus ancients","les plus récents"],
+            "link": "Voir le site/code..."
+        }
+    },
+    "footer" : {
+        "contact": "Me contacter",
+        "subtitle": "Site rélalisé avec React et Node JS"
+    }
+}

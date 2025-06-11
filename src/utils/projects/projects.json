@@ -1,0 +1,128 @@
+[
+    {
+        "_id":1,
+        "title":"Villa Helene",
+        "date": "03-2024",
+        "imageUrl":"images/villa_helene.png",
+        "imageUrlShort":"images/short_villa_helene.png",
+        "video": "",
+        "tags":"Hooks, Router, SCSS, BEM",
+        "content":[
+            {
+                "language":"fr",
+                "text":"Site immobilier des appartements dont j’étais responsable à Fianarantsoa, à Madagascar. Site codé en React, j’ai pu utiliser la base d’un code réalisé lors de ma formation Openclassrooms. Durant ce projet j'ai pu apprendre les bases de React avec la construction du code à l'aide de composants, l’utilisation de hooks et de la librairie react-router-dom. A noter le style du projet codé de SCSS avec l’architecture BEM."
+            },
+            {
+                "language":"en",
+                "text":"Real estate site for the apartments I was responsible for in Fianarantsoa, Madagascar. The site was coded in React, and I was able to use a base code from my OpenClassrooms training. During this project, I learned the basics of React, including building the code with components, using hooks, and the react-router-dom library. It’s worth mentioning that the project’s style was coded in SCSS with the BEM architecture."
+            }
+        ],
+        "link":"https://villahelene.onrender.com",
+        "category":"react"
+    },
+    {
+        "_id":2,
+        "title":"Le Grimoire",
+        "date": "06-2023",
+        "imageUrl":"images/project7.png",
+        "imageUrlShort":"images/short_project7.png",
+        "video": "videos/Grimoir.mp4",
+        "tags":"API REST, bcrypt, token, multer, sharp",
+        "content":[
+            {
+                "language":"fr",
+                "text":"Réalisation de la partie backend d'un site de notation de livres. Création d'une RestAPI. Travailler avec Express JS permet de comprendre les différentes étapes pour coder la partie serveur : création des routes, des controllers, des models... Au final ce projet m'a permis d'utiliser plusieurs librairies comme pour l'authentification et la sécurité du site. Mais également comment traiter une image avec les libraires multer et sharp."
+            },
+            {
+                "language":"en",
+                "text":"I coded the backend of a website which rates books. I built a RestAPI. Working with Express JS helps me understand the different steps of the code structure : routers, controllers, models… Eventually I used several packages for the authentification and the security of the site but also how to process an image with multer and sharp packages."
+            }
+        ],
+        "link":"https://github.com/AvirKarakitsos/OC_project7_node_express_mongodb",
+        "category":"node"
+    },
+    {
+        "_id":3,
+        "title":"La bayadère",
+        "date": "02-2024",
+        "imageUrl":"images/bayadere.png",
+        "imageUrlShort":"images/short_bayadere.png",
+        "video": "",
+        "tags":"React, parallax, framer motion, SCSS",
+        "content":[
+            {
+                "language":"fr",
+                "text":"Site d'informations sur le ballet classique, la Bayadère. Le site a été codé en React JS. Réalisation d'animations de parallax avec la librairie framer-motion. Il y a également une galerie d'images en slide continu. Le lien ci-dessous vous redirige vers le site."
+            },
+            {
+                "language":"en",
+                "text":"Information site about the classical ballet, La Bayadère. The site was coded in React JS. Parallax animations were created using the Framer Motion library. There is also a continuously sliding image gallery. The link below redirects you to the site."
+            }
+        ],
+        "link":"https://labayadere.onrender.com/",
+        "category":"react"
+    },
+    {
+        "_id":4,
+        "title":"E-Shop",
+        "date": "05-2024",
+        "imageUrl":"images/shop.png",
+        "imageUrlShort":"images/short_shop.png",
+        "video": "",
+        "tags":"Full Stack, React, Fastify, Stripe, redux toolkit",
+        "content":[
+            {
+                "language":"fr",
+                "text":"Site d'un e-commerce en full stack Javascript. Le côté client a été codé avec React et utilise redux afin de gérer les achats du client. Utilisation de Node JS et du framework Fastify afin de codé une API graphQL qui fournit les informations sur les produits mis en vente. La base de données est MongoDB Atlas. Le site utilise l'API Stripe pour gérer le paiement de l'utilisateur."
+            },
+            {
+                "language":"en",
+                "text":"An e-commerce site built with a full-stack JavaScript approach. The client side is coded with React and uses Redux to manage customer purchases. Node.js and the Fastify framework were used to develop a GraphQL API that provides information about the products for sale. The database is MongoDB Atlas. The site uses the Stripe API to handle user payments."
+            }
+        ],
+        "link":"https://github.com/AvirKarakitsos/REACT_ecommerce_frontend",
+        "category":"fullstack"
+    },
+    {
+        "_id":5,
+        "title":"Messagerie instantanée",
+        "date": "07-2024",
+        "imageUrl":"images/chat.png",
+        "imageUrlShort":"images/short_chat.png",
+        "video": "",
+        "tags":"API Websockets, socket.io, SSR, Node JS, Fastify, mySQL",
+        "content":[
+            {
+                "language":"fr",
+                "text":"Site de messagerie instantanée, avec un rendu côté serveur (SSR). Utilisation du framework Fastify, de la librairie _socket.io_. Base de données avec mySQL."
+            },
+            {
+                "language":"en",
+                "text":"Instant messaging site with server-side rendering (SSR). Built using the Fastify framework and the socket.io library. Database powered by MySQL."
+            }
+        ],
+        "link":"https://github.com/AvirKarakitsos/FASTIFY_chat_SSR",
+        "category":"node"
+    },
+    {
+        "_id":6,
+        "title":"Découverte de Mulesoft",
+        "date": "12-2024",
+        "imageUrl":"images/mulesoft.png",
+        "imageUrlShort":"images/short_mulesoft.png",
+        "video": "",
+        "tags":"Article, React",
+        "content":[
+            {
+                "language":"fr",
+                "text":"Article présentant la plateforme d'intégration Mulesoft. Elle permet d'améliorer la connexion des services et applications au sein d'une entreprise grâce à l'utilisation d'API. Le but pour l'entreprise est de gagner en rapidité et productivité. Nous présenterons la façon dont Mulesoft permet l'intégration d'API dans son intégralité: de son design à son déploiement et sa gestion."
+            },
+            {
+                "language":"en",
+                "text":"Article introducing the Mulesoft integration platform. It enhances the connection of services and applications within a company through the use of APIs. The goal for the company is to achieve greater speed and productivity. We will present how Mulesoft enables comprehensive API integration: from design to deployment and management."
+            }
+        ],
+        "link":"https://github.com/AvirKarakitsos/REACT_mulesoft",
+        "category":"react"
+    }
+]

@@ -1,0 +1,41 @@
+{
+    "header": {
+        "about": "About",
+        "projects": "My projects",
+        "contact": "Contact",
+        "login": "Login",
+        "mode": "Theme"
+    },
+    "main": {
+        "part1": {
+            "subtitle": "Web Developer"
+        },
+        "about": {
+            "tab": "About me",
+            "subtitle": "Who I am",
+            "content_1": "I decided to change my professionnal career to become a web developer. After self-learning the fondamentals of HTML, CSS and Javascript, then I could test the framework Vue in frontend and php with Laravel in backend. In 2023 I studied with the online education Openclassrooms with the goal of working as a professsional and become a Javacript web developer.",
+            "content_2": "On this portfolio you can check my personnal projects and my works with Openclassrooms. Click on an image to watch a demonstration of the site. All the codes are available on my github."
+        },
+        "skills": {
+            "tab": "Skills",
+            "subtitle": "My Skills",
+            "server": "server",
+            "tools": "database"
+        },
+        "projects": {
+            "subtitle": "My Projects",
+            "categories": {
+                "all": "All",
+                "fullstack": "Full Stack",
+                "react": "React JS",
+                "node": "Node JS"
+            },
+            "sort": ["oldest first","most recent"],
+            "link": "Link to the site/code..."
+        }
+    },
+    "footer" : {
+        "contact": "Contact",
+        "subtitle": "Website coded with React and Node JS"
+    }
+}
