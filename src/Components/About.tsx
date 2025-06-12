@@ -4,18 +4,25 @@ import { useContext } from "react"
 import { LanguageContext } from "../utils/context/LanguageContext"
 import { LanguageContextType } from "../utils/types/context"
 
-type AboutProps = {
-    tab: string
-}
 
-function About({tab}: AboutProps) {
+function About() {
     const {lang} = useContext(LanguageContext) as LanguageContextType
     
     return(
-        <div className={`${styles.show} ${tab === "about" ? "" : styles.hidden}`}>
-            <h2 className="subtitle">{translate(lang).main.about.subtitle}</h2>
-            <p className="section-4 line-height">{translate(lang).main.about.content_1}</p>
-            <p className="section-4 line-height">{translate(lang).main.about.content_2}</p>
+        <div className={styles.mainContainer}>
+            <button className="btn-4">{translate(lang).main.about.tab}</button>
+            
+            <div className={styles.container}>
+                
+                <div className={styles.leftPart}>
+                    <h2 className="subtitle">{translate(lang).main.about.subtitle}</h2>
+                    <div className={styles.video}></div>
+                </div>
+                <div className={styles.rightPart}>
+                    <p>{translate(lang).main.about.content_1}</p>
+                    <p>{translate(lang).main.about.content_2}</p>
+                </div>
+            </div>
         </div>
     )
 }

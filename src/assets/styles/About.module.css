@@ -1,10 +1,31 @@
-.show {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 1500ms;
+.mainContainer {
+   margin: 200px 0;
 }
 
-.hidden {
-    transform: translateX(-720px);
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftPart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 50px;
+}
+
+.video {
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.rightPart {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 100px;
 }

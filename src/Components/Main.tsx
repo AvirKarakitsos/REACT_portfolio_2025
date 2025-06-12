@@ -16,8 +16,8 @@ import { ObjectModal, ProjectType } from '../utils/types/project'
 import projects from '../utils/projects/projects.json'
 import Card from './Card'
 import Modal from './Modal'
-import Information from './Information'
 import { CategoryType } from '../utils/types/project'
+import About from './About'
 
 const CATEGORIES: CategoryType[] = [
     {_id: 1, name: "all"},
@@ -94,7 +94,7 @@ function Main() {
                     </ul>
                 </section>
 
-                <Information/>
+                <About/>
 
                 <Modal  modal={modal} setModal={setModal} projects={projects}/>
 
