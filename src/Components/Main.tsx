@@ -18,6 +18,7 @@ import Card from './Card'
 import Modal from './Modal'
 import { CategoryType } from '../utils/types/project'
 import About from './About'
+import Skills from './Skills'
 
 const CATEGORIES: CategoryType[] = [
     {_id: 1, name: "all"},
@@ -95,6 +96,8 @@ function Main() {
                 </section>
 
                 <About/>
+
+                <Skills/>
 
                 <Modal  modal={modal} setModal={setModal} projects={projects}/>
 

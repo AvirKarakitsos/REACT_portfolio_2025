@@ -3,53 +3,32 @@ import { useContext } from 'react'
 import { LanguageContext } from '../utils/context/LanguageContext'
 import { translate } from '../utils/common'
 import { LanguageContextType } from '../utils/types/context'
+import Information from './Information'
 
-type SkillsProps = {
-    tab: string
-}
 
-function Skills({tab}: SkillsProps) {
+function Skills() {
     const {lang} = useContext(LanguageContext) as LanguageContextType
 
-    return (
-        <div className={`${styles.show} ${tab === "about" ? "" : styles.hidden}`}>
-            <h2 className="subtitle">{translate(lang).main.skills.subtitle}</h2>
-
-            <div className={styles["skills-container"]}>
-                <div className="text-center">
-                    <div className='flex direction-column tiny-row-gap-2'>
-                        <i className="fa-solid fa-laptop font-size-medium color-grey"></i>
-                        <p>client</p>
-                    </div>
-                    <ul className={styles.list+" no-bullet"}>
-                        <li>Javascript</li>
-                        <li>React</li>
-                    </ul>
+    return(
+        <div className={styles.mainContainer}>
+            <button className="btn-4">{translate(lang).main.skills.tab}</button>
+            
+            <div className={styles.container}>
+                
+                <div className={styles.leftPart}>
+                    <h2 className="subtitle">{translate(lang).main.skills.subtitle}</h2>
+                    <p>{translate(lang).main.skills.content}</p>
                 </div>
-                <div className="text-center">
-                    <div className='flex direction-column tiny-row-gap-2'>
-                        <i className="fa-solid fa-server font-size-medium color-grey"></i>
-                        <p>{translate(lang).main.skills.server}</p>
-                    </div>
-                    <ul className={styles.list+" no-bullet"}>
-                        <li>Node JS</li>
-                        <li>Express JS</li>
-                        <li>Fastify</li>
-                    </ul>
+                <div className={styles.rightPart}>
+                    <Information skill="client"/>
+                    <Information skill="server"/>
+                    <Information skill="tools"/>
+                    <Information skill="soft"/>
                 </div>
-                <div className="text-center">
-                    <div className='flex direction-column tiny-row-gap-2'>
-                        <i className="fa-solid fa-database font-size-medium color-grey"></i>
-                        <p>{translate(lang).main.skills.tools}</p>
-                    </div>
-                    <ul className={styles.list+" no-bullet"}>
-                        <li>mongoDB Atlas</li>
-                        <li>mySQL</li>
-                    </ul>
-                </div>
-                </div>
+            </div>
         </div>
     )
+       
 }
 
 export default Skills

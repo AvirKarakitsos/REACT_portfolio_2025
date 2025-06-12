@@ -1,30 +1,50 @@
 import styles from "../assets/styles/Information.module.css"
-import About from "./About"
-import Skills from "./Skills"
 import { translate } from "../utils/common"
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import { LanguageContext } from "../utils/context/LanguageContext"
-import { LanguageContextType, ThemeContextType } from "../utils/types/context"
-import { ThemeContext } from "../utils/context/ThemeContext"
+import { LanguageContextType } from "../utils/types/context" //ThemeContextType
+//import { ThemeContext } from "../utils/context/ThemeContext"
 
-function Information() {
-    const [tab, setTab] = useState("about")
+
+type InformationProps = {
+    skill: string
+}
+
+function Information({skill}: InformationProps) {
     const {lang} = useContext(LanguageContext) as LanguageContextType
-    const {theme} = useContext(ThemeContext) as ThemeContextType
+    //const {theme} = useContext(ThemeContext) as ThemeContextType
+
+    function switchSkill(input: string) {
+        const result = {title:"", content:""}
+        switch(input) {
+            case "client":
+                result.title = translate(lang).main.skills.client.title
+                result.content = translate(lang).main.skills.client.content
+                break
+            case "server":
+                result.title = translate(lang).main.skills.server.title
+                result.content = translate(lang).main.skills.server.content
+                break
+            case "tools":
+                result.title = translate(lang).main.skills.tools.title
+                result.content = translate(lang).main.skills.tools.content
+                break
+            case "soft":
+                result.title = translate(lang).main.skills.soft.title
+                result.content = translate(lang).main.skills.soft.content
+                break
+            default: break
+        }
+        return result
+    }
+
+
 
     return(
         <section className={styles.container}>
-
-            <ul className={styles.list}>
-                <li className={`${theme === "light" ? "bg-light-1" : "bg-darker-2"} ${tab === "about" ? styles.itemSelected : styles.item}`} onClick={() => setTab("about")}>{translate(lang).main.about.tab}</li>
-                <li className={` ${theme === "light" ? "bg-light-1" : "bg-darker-2"} ${tab === "skills" ? styles.itemSelected : styles.item}`} onClick={() => setTab("skills")}>{translate(lang).main.skills.tab}</li>
-            </ul>
-
-            <div className={`relative ${styles.content} ${tab === "about" ? styles.contentAbout : ""}  ${theme === "light" ? "bg-light-1" : "bg-darker-2"}`}>
-                <About tab={tab}/>
-                <Skills tab={tab}/>
-            </div>
-            
+            <div className={styles.border}></div>
+            <h3 className={styles.title}>{switchSkill(skill).title}</h3>
+            <p className={styles.content}>{switchSkill(skill).content}</p>        
         </section>
     )
 }

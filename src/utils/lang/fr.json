@@ -22,9 +22,24 @@
         },
         "skills": {
             "tab": "Compétences",
-            "subtitle": "Mes Compétences",
-            "server": "serveur",
-            "tools": "base de données"
+            "subtitle": "Toujours apprendre, pour rester",
+            "content": "Etre développeur fukkstack permet de toucher à plusieurs donmaines du déveleloppement web.",
+            "client": {
+                "title": "Côté client",
+                "content": "React, javascript, librairies"
+            },
+            "server": {
+                "title": "Côté serveur",
+                "content": "React, javascript, librairies"
+            },
+            "tools": {
+                "title": "Base de données",
+                "content": "React, javascript, librairies"
+            },
+            "soft": {
+                "title": "Soft skills",
+                "content": "React, javascript, librairies"
+            }
         },
         "projects": {
             "subtitle": "Mes Projets",
