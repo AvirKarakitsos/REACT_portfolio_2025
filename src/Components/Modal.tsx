@@ -5,11 +5,11 @@ import { url } from '../utils/common';
 
 type ModalType = {
     modal: ObjectModal,
-    projects: ProjectType[]
     setModal(newState: ObjectModal | ((prevState: ObjectModal) => ObjectModal)): void;
+    project: ProjectType
 }
 
-function Modal({modal, setModal, projects}: ModalType) {
+function Modal({modal, setModal, project}: ModalType) {
     const refModal = useRef<HTMLDialogElement>(null);
     
     useEffect(() => {
@@ -31,13 +31,11 @@ function Modal({modal, setModal, projects}: ModalType) {
               }))
             }>
             <div className="modal-container flex" onClick ={(event) => event.stopPropagation()}>
-                {modal.isOpen
-                    ? projects.filter(project => project._id === modal.videoId)[0].video != ""
-                        ? <video className={styles.video} src={url+projects.filter(project => project._id === modal.videoId)[0].video} controls autoPlay muted={true}></video>
-                        : <img src={url+projects.filter(project => project._id === modal.videoId)[0].imageUrl}/>
-                    : null
-                }
-                </div>
+                {project.video === ""
+                    ? <img className={styles.image} src={url+project.imageUrl} alt={`projet ${project.title}`}/>
+                    : <video src={url+project.video}></video>
+                }   
+            </div>
         </dialog>
     )
 }

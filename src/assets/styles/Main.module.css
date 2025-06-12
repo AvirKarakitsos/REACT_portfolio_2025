@@ -1,5 +1,7 @@
 .main {
     width: 100%;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
 }
 
@@ -118,27 +120,13 @@
     }
 }
 
-/*  Baoba Images*/
-.baobabLeft {
-    position: absolute;
-    top: 1000px;
-    left: -500px;
-}
-
-.baobabRight {
-    position: absolute;
-    top: 1000px;
-    right: -500px;
-}
-
-.box-container {
-    margin-top: 100px;
-    padding: 0 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.boxContainer {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
     justify-items: center;
-    gap: 50px 15px;
-    cursor: default;
+    gap: 25px 20px;
+    cursor: pointer;
 }
 
 .project-filter {
@@ -173,7 +161,7 @@
         font-size: 24px;
     }
 
-    .box-container {
+    .boxContainer {
         margin-top: 50px;
         padding: 0;
         grid-template-columns: 1fr;

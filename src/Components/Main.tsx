@@ -4,18 +4,14 @@ import github from '../assets/images/github.svg'
 import twitter from '../assets/images/twitter.svg'
 import linkedin from '../assets/images/linkedin.svg'
 import instagram from '../assets/images/instagram.svg'
-import baobabBlack from '../assets/images/baobab_black.svg'
-import baobabWhite from '../assets/images/baobab_white.svg'
-
 import { useContext, useState } from 'react'
 import { sortByDate, translate } from '../utils/common'
 import { ThemeContext } from '../utils/context/ThemeContext'
 import { LanguageContext } from '../utils/context/LanguageContext'
 import { ThemeContextType, LanguageContextType } from '../utils/types/context'
-import { ObjectModal, ProjectType } from '../utils/types/project'
+import { ProjectType } from '../utils/types/project'
 import projects from '../utils/projects/projects.json'
 import Card from './Card'
-import Modal from './Modal'
 import { CategoryType } from '../utils/types/project'
 import About from './About'
 import Skills from './Skills'
@@ -24,7 +20,7 @@ const CATEGORIES: CategoryType[] = [
     {_id: 1, name: "all"},
     {_id: 2, name: "fullstack", color:"purple"},
     {_id: 3, name: "react", color:"blue"},
-    {_id: 3, name: "node", color:"green"}
+    {_id: 4, name: "node", color:"green"}
 ]
 
 function Main() {
@@ -34,7 +30,6 @@ function Main() {
     const [table, setTable] = useState<ProjectType[]>(projects)
     const [isChecked, setIsChecked] = useState(true)
     const [tag, setTag] = useState("all")
-    const [modal, setModal] = useState<ObjectModal>({isOpen: false, videoId: null})
 
     const handleFilter = function(tag: string, isTrue: boolean) {
 		if(tag === "all") {
@@ -59,18 +54,6 @@ function Main() {
     return(
         <main className={`${styles["main"]} ${theme === "light" ? "bg-light-2" : "bg-darker-1 color-white"}`}>
             <div className={styles["container"]}>
-                {
-                    theme === "light"
-                        ? <>
-                            <img src={baobabBlack} alt="baobab" className={styles.baobabLeft}/>
-                            <img src={baobabBlack} alt="baobab" className={styles.baobabRight}/>            
-                        </>
-                        : <>
-                            <img src={baobabWhite} alt="baobab" className={styles.baobabLeft}/>
-                            <img src={baobabWhite} alt="baobab" className={styles.baobabRight}/>
-                        </>
-                }
-
                 <section className={styles.topContainer}>
                     <div className={styles.up}>
                         <div className={styles.leftContent}>
@@ -99,32 +82,30 @@ function Main() {
 
                 <Skills/>
 
-                <Modal  modal={modal} setModal={setModal} projects={projects}/>
-
-                <section id="project" className="section-1 flex direction-column medium-row-gap">
-                    <h2 className="subtitle">{translate(lang).main.projects.subtitle}</h2>
+                <section id="project">
+                    <button className="btn-4">{translate(lang).main.projects.subtitle}</button>
                     <ul className={styles["project-filter"]}>
                         {CATEGORIES.map(category => <li key={category._id}
                                                         data-tag={category.name} 
                                                         className="list-filter" 
                                                         onClick={() => handleFilter(category.name, isChecked)}
                                                         >
-                                                        <button className={`btn-filter no-border ${tag === category.name ? "" : "color-grey"}`}>{translate(lang).main.projects.categories[category.name]}</button>
+                                                        <button className={`btn ${tag === category.name ? "" : "color-grey"}`}>{translate(lang).main.projects.categories[category.name]}</button>
                                                     </li>)}                                
-                                                    <li>
-                                                        <input type="checkbox" className={styles.sort} id="sort" name="sort" 
-                                                            checked={isChecked} 
-                                                            onChange={handleCheckboxChange}/>
-                                                        <label htmlFor="sort" className={styles.labelSort}>
-                                                            {isChecked 
-                                                                ? <><i className="fa-solid fa-arrow-up-wide-short iconeSort"></i><span className={styles.iconeTitle}>{translate(lang).main.projects.sort[1]}</span></>
-                                                                : <><i className="fa-solid fa-arrow-down-short-wide iconeSort"></i><span className={styles.iconeTitle}>{translate(lang).main.projects.sort[0]}</span></>
-                                                            }
-                                                        </label>
-                                                    </li>
+                        <li>
+                            <input type="checkbox" className={styles.sort} id="sort" name="sort" 
+                                checked={isChecked} 
+                                onChange={handleCheckboxChange}/>
+                            <label htmlFor="sort" className={styles.labelSort}>
+                                {isChecked 
+                                    ? <><i className="fa-solid fa-arrow-up-wide-short iconeSort"></i><span className={styles.iconeTitle}>{translate(lang).main.projects.sort[1]}</span></>
+                                    : <><i className="fa-solid fa-arrow-down-short-wide iconeSort"></i><span className={styles.iconeTitle}>{translate(lang).main.projects.sort[0]}</span></>
+                                }
+                            </label>
+                        </li>
                     </ul>
-                    <div className={styles["box-container"]}>
-                        { table.map(project => <Card key={project._id} project={project} categories={CATEGORIES} setModal= {setModal}/>) }
+                    <div className={styles.boxContainer}>
+                        { table.map(project => <Card key={project._id} project={project}/>) }
                     </div>
                 </section>
 
