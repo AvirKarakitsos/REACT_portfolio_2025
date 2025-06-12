@@ -1,7 +1,10 @@
-import { useEffect, useRef } from 'react';
+import { useContext, useEffect, useRef } from 'react';
 import styles from '../assets/styles/Modal.module.css'
 import { ObjectModal, ProjectType } from '../utils/types/project';
 import { url } from '../utils/common';
+import { LanguageContext } from '../utils/context/LanguageContext';
+import { LanguageContextType } from '../utils/types/context';
+
 
 type ModalType = {
     modal: ObjectModal,
@@ -11,7 +14,9 @@ type ModalType = {
 
 function Modal({modal, setModal, project}: ModalType) {
     const refModal = useRef<HTMLDialogElement>(null);
+    const { lang } = useContext(LanguageContext) as LanguageContextType
     
+
     useEffect(() => {
         if (modal.isOpen) {
             refModal.current?.showModal();
@@ -30,11 +35,18 @@ function Modal({modal, setModal, project}: ModalType) {
                 isOpen: false
               }))
             }>
-            <div className="modal-container flex" onClick ={(event) => event.stopPropagation()}>
+            <div className={styles.container} onClick ={(event) => event.stopPropagation()}>
                 {project.video === ""
-                    ? <img className={styles.image} src={url+project.imageUrl} alt={`projet ${project.title}`}/>
-                    : <video src={url+project.video}></video>
-                }   
+                    ? <img className={styles.media} src={url+project.imageUrl} alt={`projet ${project.title}`}/>
+                    : <video className={styles.media} src={url+project.video}></video>
+                }
+
+                <div className={styles.rightPart}>
+                    <h3>{project.title}</h3>
+                    <p>{project.tags}</p>
+                    <p>{project.content.filter((item) =>(item.language === lang))[0]?.text}</p>
+                    <p>{project.date}</p>
+                </div>
             </div>
         </dialog>
     )
