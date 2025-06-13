@@ -17,7 +17,7 @@ function Skills() {
                 
                 <div className={styles.leftPart}>
                     <h2 className="subtitle">{translate(lang).main.skills.subtitle}</h2>
-                    <p>{translate(lang).main.skills.content}</p>
+                    <p className={styles.subcontent}>{translate(lang).main.skills.content}</p>
                 </div>
                 <div className={styles.rightPart}>
                     <Information skill="client"/>

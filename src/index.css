@@ -10,7 +10,6 @@
   --background-dark-secondary: #282828;
   --color-grey: #F3F3F3;
   --color-grey-2: #8899A6;
-  --color-grey-3: #A4A3A4;
   --color-purple: #C500E8;
   --color-blue: #0096FF;
   --color-green: #32B903;
@@ -70,7 +69,7 @@ a{
 
 .content {
     color: grey;
-    line-height: 22px;
+    line-height: 21px;
 }
 
 /********** Flexbox **********/

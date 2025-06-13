@@ -38,8 +38,6 @@ function Information({skill}: InformationProps) {
         return result
     }
 
-
-
     return(
         <section className={styles.container}>
             <div className={styles.border}></div>

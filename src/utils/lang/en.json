@@ -25,21 +25,21 @@
         "skills": {
             "tab": "Skills",
             "subtitle": "Mes Compétences",
-            "content": "Etre développeur fukkstack permet de toucher à plusieurs donmaine de déveleloppement web.",
+            "content": "Etre développeur fullstack permet de toucher à plusieurs donmaine de déveleloppement web.",
             "client": {
                 "title": "Frontend",
                 "content": "React, javascript, librairies"
             },
             "server": {
-                "title": "Côté client",
+                "title": "Backend",
                 "content": "React, javascript, librairies"
             },
             "tools": {
-                "title": "Côté client",
+                "title": "Database",
                 "content": "React, javascript, librairies"
             },
             "soft": {
-                "title": "Côté client",
+                "title": "Soft Skill",
                 "content": "React, javascript, librairies"
             }
         },
