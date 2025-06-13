@@ -17,7 +17,9 @@
         "about": {
             "tab": "A propos",
             "subtitle": "Coder les passions qui nous animent",
-            "content_1": "En reconversion développeur web. Après m'être auto formé en apprenant les bases de HTML, CSS et Javascript.",
+            "title_1": "En reconversion",
+            "content_1": "Après m'être auto formé en apprenant les bases de HTML, CSS et Javascript.",
+            "title_2": "title_2",
             "content_2": "j'ai suivi en 2023 la formation Openclassrooms développeur web afin de professionnaliser ma démarche et ainsi devenir développeur fullstack."
         },
         "skills": {

@@ -19,8 +19,14 @@ function About() {
                     <div className={styles.video}></div>
                 </div>
                 <div className={styles.rightPart}>
-                    <p>{translate(lang).main.about.content_1}</p>
-                    <p>{translate(lang).main.about.content_2}</p>
+                    <div>
+                        <h3 className={"subtitle"}>{translate(lang).main.about.title_1}</h3>
+                        <p className="content">{translate(lang).main.about.content_1}</p>
+                    </div>
+                    <div>
+                        <h3 className={"subtitle"}>{translate(lang).main.about.title_2}</h3>
+                        <p className="content">{translate(lang).main.about.content_2}</p>
+                    </div>
                 </div>
             </div>
         </div>
