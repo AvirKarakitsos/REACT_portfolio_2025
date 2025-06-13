@@ -1,5 +1,5 @@
 import styles from '../assets/styles/Header.module.css'
-import logo1 from '../assets/images/logo-light.png'
+import logo1 from '../assets/images/logo_light.png'
 import logo2 from '../assets/images/logo-dark.png'
 import CV from "../assets/files/CV_Arno_2025.pdf"
 import { useContext, useState } from 'react'
@@ -17,8 +17,8 @@ function Header() {
     return (
         <header className={`${styles.header} ${theme === "light" ? "bg-light-1" : "bg-darker-2 color-white"}`}>
 			{theme === "light"
-				? <img className="size-50" src={logo1} alt="logo"/>
-				: <img className="size-50" src={logo2} alt="logo"/>
+				? <img height={40} src={logo1} alt="logo"/>
+				: <img height={40} src={logo2} alt="logo"/>
 			}
 
 			<nav className={styles.navbar}>	
