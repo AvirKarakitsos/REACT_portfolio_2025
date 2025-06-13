@@ -52,8 +52,8 @@ function Main() {
       };
 
     return(
-        <main className={`${styles["main"]} ${theme === "light" ? "bg-light-1" : "bg-darker-1 color-white"}`}>
-            <div className={styles["container"]}>
+        <main className={`${styles.main} ${theme === "light" ? "bg-light-1" : "bg-darker-1 color-white"}`}>
+            <div className={styles.container}>
                 <section className={styles.topContainer}>
                     <div className={styles.up}>
                         <div className={styles.leftContent}>
@@ -73,7 +73,7 @@ function Main() {
                     </div>
                     <ul className={styles.linksContainer}>
                         <li className={`${styles.linkItem} ${styles.link1}`}><a className={styles.link} href="https://github.com/AvirKarakitsos" target="_blank" rel="noopener noreferrer"><img height={20} src={github} alt="lien github"/>Github</a></li>
-                        <li className={`${styles.linkItem} ${styles.link2}`}><a className={styles.link} href="https://www.linkedin.com/in/arno-c-b9b56531a/" target="_blank" rel="noopener noreferrer"><img height={17} src={linkedin} className={styles.imgLogo} alt="lien linkedin"/>Linkedin</a></li>
+                        <li className={`${styles.linkItem} ${styles.link2}`}><a className={styles.link} href="https://www.linkedin.com/in/arno-c-b9b56531a/" target="_blank" rel="noopener noreferrer"><img height={17} src={linkedin} alt="lien linkedin"/>Linkedin</a></li>
                         <li className={`${styles.linkItem} ${styles.link3}`}><a className={styles.link} href="https://twitter.com/AvirKarakitsos" target="_blank" rel="noopener noreferrer"><img height={17} src={twitter} alt="lien twitter"/>X/Twitter</a></li>
                         <li className={`${styles.linkItem} ${styles.link4}`}><a className={styles.link} href="https://www.instagram.com/avir.karakitsos/" target="_blank" rel="noopener noreferrer"><img height={30} src={instagram} alt="lien instagram"/>Instagram</a></li>
                     </ul>
@@ -84,9 +84,9 @@ function Main() {
                 <Skills/>
 
                 <section id="project">
-                    <button className="btn-4">{translate(lang).main.projects.subtitle}</button>
+                    <button className="btn">{translate(lang).main.projects.subtitle}</button>
                     <h2 className={`${styles.subtitleProject} subtitle`}>{translate(lang).main.projects.content}</h2>
-                    <ul className={styles["project-filter"]}>
+                    <ul className={styles.filterProject}>
                         {CATEGORIES.map(category => <li key={category._id}
                                                         data-tag={category.name} 
                                                         className="list-filter" 

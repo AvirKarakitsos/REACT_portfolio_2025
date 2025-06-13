@@ -148,7 +148,7 @@
     cursor: pointer;
 }
 
-.project-filter {
+.filterProject {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -168,10 +168,6 @@
   }
 
 @media screen and (max-width: 1080px) {
-    .div-right {
-        height: 328px;
-    }
-
     .title {
         font-size: 70px;
     }
@@ -194,24 +190,11 @@
             transform: translate(0);
         }
     }
-    
-    .frame-left {
-        animation: frameStatic;
-        z-index: 20;
-    }
 }
 
 @media screen and (max-width: 750px) {
     .container {
         padding: 45px 10px 45px 10px;
-    }
-
-    .top-container {
-        height: auto;
-        padding: 90px 0 10px 0;
-        flex-direction: column;
-        row-gap: 10px;
-        align-items: center;
     }
 
     .title {
@@ -222,7 +205,7 @@
         font-size: 20px;
     }
 
-    .project-filter {
+    .filterProject {
         gap: 15px 25px;
     }
 }

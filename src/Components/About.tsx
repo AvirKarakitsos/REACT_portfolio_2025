@@ -10,7 +10,7 @@ function About() {
     
     return(
         <div className={styles.mainContainer}>
-            <button className="btn-4">{translate(lang).main.about.tab}</button>
+            <button className="btn">{translate(lang).main.about.tab}</button>
             
             <div className={styles.container}>
                 

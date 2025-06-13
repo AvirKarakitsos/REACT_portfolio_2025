@@ -18,9 +18,6 @@
 
 .image:hover {
     filter : blur(4px);
-}
-
-.image:hover  {
     transform: scale(1.03);
 }
 
@@ -47,40 +44,6 @@
     transform: rotate(45deg);
 }
 
-.box-section {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: justify;
-}
-
-.box-section span {
-    font-style: italic;
-    font-size: .8rem;
-}
-
-.bookmark {
-    position: absolute;
-    top: -20px;
-    right: 0;
-    font-size: 25px;
-}
-
-.box-description {
-    font-size: 15px;
-}
-
-.box-bottom {
-    display: flex;
-    justify-content: space-between;
-}
-
-.date {
-    font-style: italic;
-    font-size: .8rem;
-}
-
 @media screen and (max-width: 750px) {
     .image {
         height: 185px;
@@ -90,14 +53,5 @@
         height: 340px;
         padding: 10px 10px 0 10px;
         transition: height 1250ms;
-    }
-
-    .collapseOpen {
-        height: 550px;
-    }
-
-    .box-section {
-        justify-content: flex-start;
-        row-gap: 10px;
     }
 }
