@@ -58,7 +58,8 @@
         }
     },
     "footer" : {
-        "contact": "Contact",
-        "subtitle": "Website coded with React and Node JS"
+        "contact": "Me contacter",
+        "content1": "Site rélalisé avec React et Node JS",
+        "content2": "Maquette du site réalisée par "
     }
 }
