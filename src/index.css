@@ -149,6 +149,10 @@ row-gap: 5px;
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 /********** Box size **********/
 .h-100vh {
   height: 100vh;
@@ -239,11 +243,10 @@ row-gap: 5px;
   font-size: 17px;
 }
 
-/*********** Paragraph ********/
-.line-height {
-  line-height: 1.5em;
+/*********** Font Style ********/
+.italic {
+  font-style: italic;
 }
-
 
 /*********** Border **********/
 .border-black {

@@ -4,7 +4,7 @@ import { ObjectModal, ProjectType } from '../utils/types/project';
 import { url } from '../utils/common';
 import { LanguageContext } from '../utils/context/LanguageContext';
 import { LanguageContextType } from '../utils/types/context';
-
+import { translate } from '../utils/common';
 
 type ModalType = {
     modal: ObjectModal,
@@ -42,10 +42,11 @@ function Modal({modal, setModal, project}: ModalType) {
                 }
 
                 <div className={styles.rightPart}>
-                    <h3>{project.title}</h3>
-                    <p>{project.tags}</p>
+                    <h3 className='subtitle'>{project.title}</h3>
+                    <p className='italic'>{project.tags}</p>
                     <p>{project.content.filter((item) =>(item.language === lang))[0]?.text}</p>
-                    <p>{project.date}</p>
+                    <p><a href={project.link}>{translate(lang).main.projects.link}</a></p>
+                    <p className='text-right'>{project.date}</p>
                 </div>
             </div>
         </dialog>
