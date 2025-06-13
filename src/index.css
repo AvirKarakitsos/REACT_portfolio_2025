@@ -8,7 +8,8 @@
   --background-light: #ECE5DD80;
   --background-dark-primary: #181818;
   --background-dark-secondary: #282828;
-  --color-grey: #8899A6;
+  --color-grey: #F3F3F3;
+  --color-grey-2: #8899A6;
   --color-purple: #C500E8;
   --color-blue: #0096FF;
   --color-green: #32B903;
@@ -25,7 +26,10 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
 }
 
 /********** Common **********/

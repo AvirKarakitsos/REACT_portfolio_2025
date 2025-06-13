@@ -2,7 +2,7 @@ import styles from '../assets/styles/Main.module.css'
 import photo from '../assets/images/photo-baobab.png'
 import github from '../assets/images/github.svg'
 import twitter from '../assets/images/twitter.svg'
-import linkedin from '../assets/images/linkedin.svg'
+import linkedin from '../assets/images/linkedin_2.svg'
 import instagram from '../assets/images/instagram.svg'
 import { useContext, useState } from 'react'
 import { sortByDate, translate } from '../utils/common'
@@ -52,7 +52,7 @@ function Main() {
       };
 
     return(
-        <main className={`${styles["main"]} ${theme === "light" ? "bg-light-2" : "bg-darker-1 color-white"}`}>
+        <main className={`${styles["main"]} ${theme === "light" ? "bg-light-1" : "bg-darker-1 color-white"}`}>
             <div className={styles["container"]}>
                 <section className={styles.topContainer}>
                     <div className={styles.up}>
@@ -64,6 +64,7 @@ function Main() {
                                 <img src={photo} alt="Allée de baobabs à Madagascar" className={styles.img}/>
                             </div>
                             <div className={styles.subtitles}>
+                                <p>Arno Cotsoyannis</p>
                                 <p>{translate(lang).main.part1.subtitle1}</p>
                                 <p>{translate(lang).main.part1.subtitle2}</p>
                                 <p>{translate(lang).main.part1.subtitle3}</p>
@@ -71,10 +72,10 @@ function Main() {
                         </div>
                     </div>
                     <ul className={styles.linksContainer}>
-                        <li className={`btn ${styles.linkItem} ${styles.link1}`}><a className={styles.link} href="https://github.com/AvirKarakitsos" target="_blank" rel="noopener noreferrer"><img height={25} width={25} src={github} alt="lien github"/>Github</a></li>
-                        <li className={`btn ${styles.linkItem} ${styles.link2}`}><a className={styles.link} href="https://www.linkedin.com/in/arno-c-b9b56531a/" target="_blank" rel="noopener noreferrer"><img height={25} width={25} src={linkedin} className={styles.imgLogo} alt="lien linkedin"/>Linkedin</a></li>
-                        <li className={`btn ${styles.linkItem} ${styles.link3}`}><a className={styles.link} href="https://twitter.com/AvirKarakitsos" target="_blank" rel="noopener noreferrer"><img height={18} width={18} src={twitter} alt="lien twitter"/>X/Twitter</a></li>
-                        <li className={`btn ${styles.linkItem} ${styles.link4}`}><a className={styles.link} href="https://www.instagram.com/avir.karakitsos/" target="_blank" rel="noopener noreferrer"><img height={25} width={25} src={instagram} alt="lien instagram"/>Instagram</a></li>
+                        <li className={`${styles.linkItem} ${styles.link1}`}><a className={styles.link} href="https://github.com/AvirKarakitsos" target="_blank" rel="noopener noreferrer"><img height={20} src={github} alt="lien github"/>Github</a></li>
+                        <li className={`${styles.linkItem} ${styles.link2}`}><a className={styles.link} href="https://www.linkedin.com/in/arno-c-b9b56531a/" target="_blank" rel="noopener noreferrer"><img height={17} src={linkedin} className={styles.imgLogo} alt="lien linkedin"/>Linkedin</a></li>
+                        <li className={`${styles.linkItem} ${styles.link3}`}><a className={styles.link} href="https://twitter.com/AvirKarakitsos" target="_blank" rel="noopener noreferrer"><img height={17} src={twitter} alt="lien twitter"/>X/Twitter</a></li>
+                        <li className={`${styles.linkItem} ${styles.link4}`}><a className={styles.link} href="https://www.instagram.com/avir.karakitsos/" target="_blank" rel="noopener noreferrer"><img height={30} src={instagram} alt="lien instagram"/>Instagram</a></li>
                     </ul>
                 </section>
 
