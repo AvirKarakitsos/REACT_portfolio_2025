@@ -49,6 +49,8 @@
     align-items: center;
     column-gap: 5px;
     list-style-type: none;
+    background-color: var(--color-grey);
+    border-radius: 30px;
 }
 
 .itemMode {

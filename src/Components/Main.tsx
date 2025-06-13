@@ -85,13 +85,14 @@ function Main() {
 
                 <section id="project">
                     <button className="btn-4">{translate(lang).main.projects.subtitle}</button>
+                    <h2 className={`${styles.subtitleProject} subtitle`}>{translate(lang).main.projects.content}</h2>
                     <ul className={styles["project-filter"]}>
                         {CATEGORIES.map(category => <li key={category._id}
                                                         data-tag={category.name} 
                                                         className="list-filter" 
                                                         onClick={() => handleFilter(category.name, isChecked)}
                                                         >
-                                                        <button className={`btn ${tag === category.name ? "" : "color-grey"}`}>{translate(lang).main.projects.categories[category.name]}</button>
+                                                        <button className={`${styles.buttonFilter} ${tag === category.name ? "" : "color-grey"}`}>{translate(lang).main.projects.categories[category.name]}</button>
                                                     </li>)}                                
                         <li>
                             <input type="checkbox" className={styles.sort} id="sort" name="sort" 

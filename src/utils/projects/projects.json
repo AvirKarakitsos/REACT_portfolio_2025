@@ -22,7 +22,7 @@
     },
     {
         "_id":2,
-        "title":"Le Grimoire",
+        "title":"Le Grimoire - Node JS, Express JS",
         "date": "06-2023",
         "imageUrl":"images/project7.png",
         "imageUrlShort":"images/short_project7.png",

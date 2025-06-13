@@ -136,6 +136,18 @@
     cursor: pointer;
 }
 
+.subtitleProject {
+    width: 50%;
+}
+
+.buttonFilter {
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid var(--color-grey-2);
+    cursor: pointer;
+}
+
 .project-filter {
     display: flex;
     flex-wrap: wrap;

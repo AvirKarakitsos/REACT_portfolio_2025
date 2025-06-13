@@ -33,17 +33,22 @@ function Card({project}: CardProps) {
     return (
         <>
         <article>
-            <div className={styles.box}>
-                <picture  
-                    onClick={() => handleModal(project._id)} 
-                    onMouseEnter={()=> setMouseEvent(prev=> !prev)}
-                    onMouseLeave={()=> setMouseEvent(prev=> !prev)}>
-
+            <div 
+                className={styles.box}
+                onClick={() => handleModal(project._id)} 
+                onMouseEnter={()=> setMouseEvent(prev=> !prev)}
+                onMouseLeave={()=> setMouseEvent(prev=> !prev)}
+            >
+                <picture>
                     <source media="(max-width: 315px)" srcSet={smallUrl}/>
                     <img className={styles.image} src={url+project.imageUrl} alt={`projet ${project.title}`}/>
-                
-                    {mouseEvent ? <h4 className={styles.title}>{project.title}</h4> : null }
                 </picture>
+                
+                    {mouseEvent ? <div className={styles.titleContainer}>
+                                    <h4>{project.title}</h4>
+                                    <i className={`fa-solid fa-arrow-up ${styles.arrow}`}></i> 
+                                </div>
+                                : null }
             </div> 
         </article>
 

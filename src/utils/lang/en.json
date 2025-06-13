@@ -45,6 +45,8 @@
         },
         "projects": {
             "subtitle": "My Projects",
+            
+            "content": "Des projets personnels et dévoloppés avec Openclassrooms",
             "categories": {
                 "all": "All",
                 "fullstack": "Full Stack",

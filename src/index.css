@@ -347,7 +347,7 @@ row-gap: 5px;
 }
 
 .color-grey {
-  color: var(--color-grey);
+  color: grey;
 }
 
 /*************icones*/
