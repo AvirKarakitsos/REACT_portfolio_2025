@@ -15,8 +15,8 @@
   --color-red: #E80000;
   --opacity-grey: #3C3C3CCC;
   --opacity-green: #32B90380;
-  /* --white: #FFF; */
-  --white: #f7f7f7;
+  --white: #FFF;
+  /* --white: #f7f7f7; */
   --black: #000;
 }
 
@@ -236,7 +236,7 @@ row-gap: 5px;
 
 /*********** Border **********/
 .border-black {
-  border: 2px solid var(--black);
+  border-bottom: 1px solid var(--black);
 }
 
 .border-white {
