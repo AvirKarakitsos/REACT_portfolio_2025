@@ -9,7 +9,7 @@ function About() {
     const {lang} = useContext(LanguageContext) as LanguageContextType
     
     return(
-        <div className={styles.mainContainer}>
+        <div id='about-me' className={styles.mainContainer}>
             <button className="btn">{translate(lang).main.about.tab}</button>
             
             <div className={styles.container}>

@@ -1,7 +1,7 @@
 [
     {
         "_id":1,
-        "title":"Villa Helene",
+        "title":"Villa Helene - React JS",
         "date": "03-2024",
         "imageUrl":"images/villa_helene.png",
         "imageUrlShort":"images/short_villa_helene.png",
@@ -43,7 +43,7 @@
     },
     {
         "_id":3,
-        "title":"La bayadère",
+        "title":"La bayadère - React JS",
         "date": "02-2024",
         "imageUrl":"images/bayadere.png",
         "imageUrlShort":"images/short_bayadere.png",
@@ -64,12 +64,12 @@
     },
     {
         "_id":4,
-        "title":"E-Shop",
+        "title":"E-Shop - React + Fastify",
         "date": "05-2024",
         "imageUrl":"images/shop.png",
         "imageUrlShort":"images/short_shop.png",
         "video": "",
-        "tags":"Full Stack, React, Fastify, Stripe, redux toolkit",
+        "tags":"Full Stack, React, Fastify, Stripe, redux toolkit, graphQL",
         "content":[
             {
                 "language":"fr",
@@ -85,7 +85,7 @@
     },
     {
         "_id":5,
-        "title":"Messagerie instantanée",
+        "title":"Messagerie instantanée - Fastify",
         "date": "07-2024",
         "imageUrl":"images/chat.png",
         "imageUrlShort":"images/short_chat.png",
@@ -106,7 +106,7 @@
     },
     {
         "_id":6,
-        "title":"Découverte de Mulesoft",
+        "title":"Découverte de Mulesoft - React",
         "date": "12-2024",
         "imageUrl":"images/mulesoft.png",
         "imageUrlShort":"images/short_mulesoft.png",

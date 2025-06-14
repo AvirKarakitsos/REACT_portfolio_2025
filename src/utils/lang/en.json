@@ -1,9 +1,8 @@
 {
     "header": {
         "about": "About",
-        "projects": "My projects",
-        "contact": "Contact",
-        "login": "Login",
+        "projects": "Projects",
+        "skill": "Skills",
         "mode": "Theme"
     },
     "main": {

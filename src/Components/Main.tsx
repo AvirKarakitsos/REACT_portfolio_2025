@@ -98,12 +98,12 @@ function Main() {
                             <input type="checkbox" className={styles.sort} id="sort" name="sort" 
                                 checked={isChecked} 
                                 onChange={handleCheckboxChange}/>
-                            <label htmlFor="sort" className={styles.labelSort}>
+                            {/* <label htmlFor="sort" className={styles.labelSort}>
                                 {isChecked 
                                     ? <><i className="fa-solid fa-arrow-up-wide-short iconeSort"></i><span className={styles.iconeTitle}>{translate(lang).main.projects.sort[1]}</span></>
                                     : <><i className="fa-solid fa-arrow-down-short-wide iconeSort"></i><span className={styles.iconeTitle}>{translate(lang).main.projects.sort[0]}</span></>
                                 }
-                            </label>
+                            </label> */}
                         </li>
                     </ul>
                     <div className={styles.boxContainer}>

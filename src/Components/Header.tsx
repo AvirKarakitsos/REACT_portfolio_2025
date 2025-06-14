@@ -1,7 +1,6 @@
 import styles from '../assets/styles/Header.module.css'
 import logo1 from '../assets/images/logo_light.png'
 import logo2 from '../assets/images/logo-dark.png'
-import CV from "../assets/files/CV_Arno_2025.pdf"
 import { useContext, useState } from 'react'
 import { ThemeContext } from '../utils/context/ThemeContext.js'
 import { LanguageContext } from '../utils/context/LanguageContext.js'
@@ -24,11 +23,10 @@ function Header() {
 			<nav className={styles.navbar}>	
 				<ul className={!open 
 					? `${styles.listNavbar} ${styles.anchor}  ${theme === "light" ? "bg-light-1" : "bg-darker-2"}`
-					: `${styles.listNavbar} ${styles.anchor} ${styles.slide} ${theme === "light" ? "bg-light-1" : "bg-darker-2"}`}> 
-					<li><a className='no-decoration' href={CV} target='_blank' rel="noreferrer">CV</a></li>
+					: `${styles.listNavbar} ${styles.anchor} ${styles.slide} ${theme === "light" ? "bg-light-1" : "bg-darker-2"}`}>
 					<li><a className="no-decoration" href='#about-me'>{translate(lang).header.about}</a></li>
+					<li><a className="no-decoration" href='#skill'>{translate(lang).header.skill}</a></li>
 					<li><a className="no-decoration" href='#project'>{translate(lang).header.projects}</a></li>
-					<li><a className="no-decoration" href='#footer'>Contact</a></li>
 				</ul>
 			</nav>
 				

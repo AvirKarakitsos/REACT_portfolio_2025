@@ -46,7 +46,7 @@ function Modal({modal, setModal, project}: ModalType) {
                     <p className='italic'>{project.tags}</p>
                     <p>{project.content.filter((item) =>(item.language === lang))[0]?.text}</p>
                     <p><a href={project.link}>{translate(lang).main.projects.link}</a></p>
-                    <p className='text-right'>{project.date}</p>
+                    {/* <p className='text-right'>{project.date}</p> */}
                 </div>
             </div>
         </dialog>

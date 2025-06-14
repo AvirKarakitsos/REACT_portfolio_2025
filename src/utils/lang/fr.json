@@ -1,9 +1,8 @@
 {
     "header": {
         "about": "A propos",
-        "projects": "Mes projets",
-        "contact": "Contact",
-        "login": "Se Connecter",
+        "skill": "Compétences",
+        "projects": "Projets",
         "mode": "Mode"
     },
     "main": {
@@ -16,27 +15,27 @@
         },
         "about": {
             "tab": "A propos",
-            "subtitle": "Coder les passions qui nous animent",
+            "subtitle": "Trouver la motivation, coder ce qui nous animent",
             "title_1": "En reconversion",
-            "content_1": "Après m'être auto formé en apprenant les bases de HTML, CSS et Javascript.",
-            "title_2": "title_2",
-            "content_2": "j'ai suivi en 2023 la formation Openclassrooms développeur web afin de professionnaliser ma démarche et ainsi devenir développeur fullstack."
+            "content_1": "Après m'être auto formé en apprenant les bases de HTML, CSS et Javascript,",
+            "title_2": "Formation",
+            "content_2": "j'ai suivi la formation Openclassrooms développeur web afin de professionnaliser ma démarche et ainsi devenir développeur fullstack."
         },
         "skills": {
             "tab": "Compétences",
-            "subtitle": "Toujours apprendre, pour rester",
-            "content": "Etre développeur fullstack permet de toucher à plusieurs donmaines du déveleloppement web.",
+            "subtitle": "Veille et apprentissage continus",
+            "content": "Etre développeur fullstack me permet de toucher à plusieurs donmaines du déveleloppement web.",
             "client": {
                 "title": "Côté Client",
-                "content": "Je travaille avec Javascript et React principalement. J'ai commencé à rajouter Typescript."
+                "content": "Je travaille avec Javascript et React. J'ai commencé à rajouter Typescript dans mes projets."
             },
             "server": {
                 "title": "Côté Serveur",
-                "content": "React, javascript, librairies"
+                "content": "Avec Nodes JS, j'ai pu utiliser Express JS et plus récemment Fastify, pour coder des API REST, GraphQL et websocket"
             },
             "tools": {
                 "title": "Base De Données",
-                "content": "React, javascript, librairies"
+                "content": "J'utilise mySQL et sqlite3. En noSQL j'utilise mongoDB."
             },
             "soft": {
                 "title": "Soft Skills",
@@ -45,7 +44,7 @@
         },
         "projects": {
             "subtitle": "Mes Projets",
-            "content": "Des projets personnels et dévoloppés avec Openclassrooms",
+            "content": "Des projets personnels ou dévoloppés avec Openclassrooms",
             "categories": {
                 "all": "Tous",
                 "fullstack": "Full Stack",

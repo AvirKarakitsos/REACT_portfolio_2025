@@ -14,7 +14,12 @@
 .listInfo {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 5px;
+    font-size: 16px;
+}
+
+.listInfo img{
+    margin-bottom: 25px;
 }
 
 .listMedia {
@@ -23,5 +28,5 @@
     transform: translateX(-50%);
     list-style-type: none;
     display: flex;
-    column-gap: 10px;
+    column-gap: 25px;
 }

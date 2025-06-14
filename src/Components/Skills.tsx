@@ -10,7 +10,7 @@ function Skills() {
     const {lang} = useContext(LanguageContext) as LanguageContextType
 
     return(
-        <div className={styles.mainContainer}>
+        <div id='skill' className={styles.mainContainer}>
             <button className="btn">{translate(lang).main.skills.tab}</button>
             
             <div className={styles.container}>
