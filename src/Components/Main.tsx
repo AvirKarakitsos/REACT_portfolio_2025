@@ -1,5 +1,5 @@
 import styles from '../assets/styles/Main.module.css'
-import photo from '../assets/images/photo-baobab.png'
+import photo from '../assets/images/contraste_25_froid_saisissant.jpg'
 import github from '../assets/images/github.svg'
 import twitter from '../assets/images/twitter.svg'
 import linkedin from '../assets/images/linkedin_2.svg'
@@ -61,7 +61,7 @@ function Main() {
                         </div>
                         <div className={styles.rightContent}>
                             <div className={styles.imgContainer}>
-                                <img src={photo} alt="Allée de baobabs à Madagascar" className={styles.img}/>
+                                <img src={photo} alt="photo" className={styles.img}/>
                             </div>
                             <div className={styles.subtitles}>
                                 <p>Arno Cotsoyannis</p>

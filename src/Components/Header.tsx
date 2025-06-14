@@ -40,10 +40,10 @@ function Header() {
 
 				<ul className={styles.listMode}>
 					{theme === "light"
-						? <li><button  onClick={() => toggleTheme("dark")} className={`${styles.itemMode} btn`}><i className="fa-regular fa-moon"></i>{translate(lang).header.mode}</button></li>
-						: <li><button onClick={() => toggleTheme("light")}  className={`${styles.itemMode} btn bg-light-1 color-black`}><i className="fa-solid fa-sun color-black"></i>{translate(lang).header.mode}</button></li>
+						? <li><button  onClick={() => toggleTheme("dark")} className={`${styles.itemMode}`}><i className="fa-regular fa-moon"></i>{translate(lang).header.mode}</button></li>
+						: <li><button onClick={() => toggleTheme("light")}  className={`${styles.itemMode} bg-light-1 color-black`}><i className="fa-solid fa-sun color-black"></i>{translate(lang).header.mode}</button></li>
 					}
-					<li>
+					<li className={styles.buttonContainer}>
 						<button
 							className={`${styles.button} bg-dark`}
 							onClick={() => setOpen((value) => !value)}

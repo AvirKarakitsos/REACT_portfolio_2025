@@ -33,23 +33,31 @@
     font-weight: 400;
 }
 
+.rightContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .imgContainer {
-    height: 50%;
+    height: 60%;
+    display: flex;
+    align-items: flex-end;
 }
 
 .img {
-    height: 300px;
-    width: 250px;
+    width: 200px;
     object-fit: contain;
+    border-radius: 15px;
 }
 
 .subtitles {
-    height: 50%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: end;
-    row-gap: 5px;
+    row-gap: 2px;
     font-weight: 500;
 }
 
