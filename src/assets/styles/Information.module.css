@@ -22,6 +22,11 @@
     font-size: 25px;
     font-weight: 500;
     margin: 20px 0;
+    color: #000;
+}
+
+.container:hover .title {
+    color: #fff;
 }
 
 .content {

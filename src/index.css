@@ -106,6 +106,10 @@ a{
   border-bottom: 1px solid var(--black);
 }
 
+.border-white {
+  border-bottom: 1px solid var(--white);
+}
+
 /*********** Background-Color **********/
 .bg-light-1 {
   background-color: var(--white);

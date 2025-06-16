@@ -2,8 +2,7 @@ import styles from "../assets/styles/Information.module.css"
 import { translate } from "../utils/common"
 import { useContext } from "react"
 import { LanguageContext } from "../utils/context/LanguageContext"
-import { LanguageContextType } from "../utils/types/context" //ThemeContextType
-//import { ThemeContext } from "../utils/context/ThemeContext"
+import { LanguageContextType } from "../utils/types/context"
 
 
 type InformationProps = {
@@ -12,7 +11,6 @@ type InformationProps = {
 
 function Information({skill}: InformationProps) {
     const {lang} = useContext(LanguageContext) as LanguageContextType
-    //const {theme} = useContext(ThemeContext) as ThemeContextType
 
     function switchSkill(input: string) {
         const result = {title:"", content:""}
@@ -41,7 +39,7 @@ function Information({skill}: InformationProps) {
     return(
         <section className={styles.container}>
             <div className={styles.border}></div>
-            <h3 className={styles.title}>{switchSkill(skill).title}</h3>
+            <h3 className={`${styles.title}`}>{switchSkill(skill).title}</h3>
             <p className={styles.content}>
                 {switchSkill(skill).content}
                 {skill === "soft"

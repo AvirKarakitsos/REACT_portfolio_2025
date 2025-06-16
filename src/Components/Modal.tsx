@@ -3,7 +3,8 @@ import styles from '../assets/styles/Modal.module.css'
 import { ObjectModal, ProjectType } from '../utils/types/project';
 import { url } from '../utils/common';
 import { LanguageContext } from '../utils/context/LanguageContext';
-import { LanguageContextType } from '../utils/types/context';
+import { LanguageContextType, ThemeContextType } from '../utils/types/context';
+import { ThemeContext } from "../utils/context/ThemeContext"
 import { translate } from '../utils/common';
 
 type ModalType = {
@@ -15,7 +16,7 @@ type ModalType = {
 function Modal({modal, setModal, project}: ModalType) {
     const refModal = useRef<HTMLDialogElement>(null);
     const { lang } = useContext(LanguageContext) as LanguageContextType
-    
+    const {theme} = useContext(ThemeContext) as ThemeContextType
 
     useEffect(() => {
         if (modal.isOpen) {
@@ -35,7 +36,10 @@ function Modal({modal, setModal, project}: ModalType) {
                 isOpen: false
               }))
             }>
-            <div className={styles.container} onClick ={(event) => event.stopPropagation()}>
+            <div 
+                className={`${styles.container} ${theme === "light" ? "bg-light-1" : "bg-darker-1 color-white"}`} 
+                onClick ={(event) => event.stopPropagation()}>
+                
                 {project.video === ""
                     ? <img className={styles.media} src={url+project.imageUrl} alt={`projet ${project.title}`}/>
                     : <video className={styles.media} src={url+project.video}></video>

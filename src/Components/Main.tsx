@@ -71,7 +71,7 @@ function Main() {
                             </div>
                         </div>
                     </div>
-                    <ul className={styles.linksContainer}>
+                    <ul className={`${styles.linksContainer} ${theme === "light" ? null : "color-black"}`}>
                         <li className={`${styles.linkItem} ${styles.link1}`}><a className={styles.link} href="https://github.com/AvirKarakitsos" target="_blank" rel="noopener noreferrer"><img height={20} src={github} alt="lien github"/>Github</a></li>
                         <li className={`${styles.linkItem} ${styles.link2}`}><a className={styles.link} href="https://www.linkedin.com/in/arno-c-b9b56531a/" target="_blank" rel="noopener noreferrer"><img height={17} src={linkedin} alt="lien linkedin"/>Linkedin</a></li>
                         <li className={`${styles.linkItem} ${styles.link3}`}><a className={styles.link} href="https://twitter.com/AvirKarakitsos" target="_blank" rel="noopener noreferrer"><img height={17} src={twitter} alt="lien twitter"/>X/Twitter</a></li>
