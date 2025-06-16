@@ -15,27 +15,27 @@
         },
         "about": {
             "tab": "About me",
-            "subtitle": "Who I am",
-            "title_1": "En reconversion",
-            "content_1": "I decided to change my professionnal career to become a web developer. After self-learning the fondamentals of HTML, CSS and Javascript, then I could test the framework Vue in frontend and php with Laravel in backend. In 2023 I studied with the online education Openclassrooms with the goal of working as a professsional and become a Javacript web developer.",
+            "subtitle": "Finding motivation, coding what drives us",
+            "title_1": "New way",
+            "content_1": "I decided to change my professionnal career to become a web developer. After self-learning the fondamentals of HTML, CSS and Javascript, then I could work with React in frontend and Node in backend.",
             "title_2": "En reconversion",
-            "content_2": "On this portfolio you can check my personnal projects and my works with Openclassrooms. Click on an image to watch a demonstration of the site. All the codes are available on my github."
+            "content_2": "Then I studied with the online education Openclassrooms with the goal of working as a professsional and become a Javacript web developer."
         },
         "skills": {
             "tab": "Skills",
-            "subtitle": "Mes Compétences",
-            "content": "Etre développeur fullstack permet de toucher à plusieurs donmaine de déveleloppement web.",
+            "subtitle": "Continuous monitoring and learning",
+            "content": "Being a fullstack developer allows me to touch on several areas of web development.",
             "client": {
                 "title": "Frontend",
-                "content": "React, javascript, librairies"
+                "content": "I work with Javascript and React. I recently added Typescript in my projects"
             },
             "server": {
                 "title": "Backend",
-                "content": "React, javascript, librairies"
+                "content": "With Node JS I work with frameworks like Express and Fastify. I code API with REST, graphQL ro websocket architecture"
             },
             "tools": {
                 "title": "Database",
-                "content": "React, javascript, librairies"
+                "content": "I work with mySQL and sqlite3. FOr noSQL I use mongoDB"
             },
             "soft": {
                 "title": "Soft Skill",
@@ -43,9 +43,8 @@
             }
         },
         "projects": {
-            "subtitle": "My Projects",
-            
-            "content": "Des projets personnels et dévoloppés avec Openclassrooms",
+            "subtitle": "Projects",
+            "content": "Personal projects or projects developed with Openclassrooms",
             "categories": {
                 "all": "All",
                 "fullstack": "Full Stack",
@@ -57,8 +56,7 @@
         }
     },
     "footer" : {
-        "contact": "Me contacter",
-        "content1": "Site rélalisé avec React et Node JS",
-        "content2": "Maquette du site réalisée par "
+        "content1": "Website coded with React JS",
+        "content2": "Model made by "
     }
 }

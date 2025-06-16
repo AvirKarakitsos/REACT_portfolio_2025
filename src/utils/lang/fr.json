@@ -15,7 +15,7 @@
         },
         "about": {
             "tab": "A propos",
-            "subtitle": "Trouver la motivation, coder ce qui nous animent",
+            "subtitle": "Trouver la motivation, coder ceux qui nous animent",
             "title_1": "En reconversion",
             "content_1": "Après m'être auto formé en apprenant les bases de HTML, CSS et Javascript,",
             "title_2": "Formation",
@@ -43,7 +43,7 @@
             }
         },
         "projects": {
-            "subtitle": "Mes Projets",
+            "subtitle": "Projets",
             "content": "Des projets personnels ou dévoloppés avec Openclassrooms",
             "categories": {
                 "all": "Tous",
@@ -56,7 +56,6 @@
         }
     },
     "footer" : {
-        "contact": "Me contacter",
         "content1": "Site rélalisé avec React JS",
         "content2": "Maquette réalisée par "
     }
