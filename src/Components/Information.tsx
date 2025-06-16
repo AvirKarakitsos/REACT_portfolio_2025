@@ -42,7 +42,13 @@ function Information({skill}: InformationProps) {
         <section className={styles.container}>
             <div className={styles.border}></div>
             <h3 className={styles.title}>{switchSkill(skill).title}</h3>
-            <p className={styles.content}>{switchSkill(skill).content}</p>        
+            <p className={styles.content}>
+                {switchSkill(skill).content}
+                {skill === "soft"
+                    ? <a href="https://my.assessfirst.com/public/profile/zhnpc3rm-arno-cotsoyannis?lang=fr-FR">profile</a>
+                    : null
+                }
+            </p>        
         </section>
     )
 }
