@@ -52,12 +52,27 @@
         width: 50%;
         font-size: 18px;
         line-height: 25px;
-        color: grey;
     }
 
     .rightPart {
         width: 100%;
         justify-content: flex-start;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .leftPart {
+        flex-direction: column;
+    }
+
+    .leftPart h2 {
+        width: 100%;
+    }
+
+    .subcontent{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
 
 }

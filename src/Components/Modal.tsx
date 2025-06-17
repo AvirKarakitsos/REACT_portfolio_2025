@@ -46,7 +46,7 @@ function Modal({modal, setModal, project}: ModalType) {
                 }
 
                 <div className={styles.rightPart}>
-                    <h3 className='subtitle'>{project.title}</h3>
+                    <h3 className={styles.title}>{project.title}</h3>
                     <p className={styles.tag}>{project.tags}</p>
                     <p className={styles.content}>{project.content.filter((item) =>(item.language === lang))[0]?.text}</p>
                     <p className={styles.link}><a href={project.link}>{translate(lang).main.projects.link}</a></p>

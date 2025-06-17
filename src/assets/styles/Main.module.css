@@ -194,20 +194,13 @@
     }
 }
 
-@media screen and (max-width: 750px) {
-    .container {
-        padding: 45px 10px 45px 10px;
+@media screen and (max-width: 768px) {
+    .subtitleProject {
+        width: 100%;
     }
 
-    .title {
-        font-size: 60px;
-    }
-
-    .subtitle {
-        font-size: 20px;
-    }
-
-    .filterProject {
-        gap: 15px 25px;
+    .boxContainer {
+        margin-top: 25px;
     }
 }
+

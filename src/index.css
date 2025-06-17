@@ -151,10 +151,8 @@ a{
   }
 }
 
-@media screen and (max-width: 750px) {
-
-  .btn {
-      padding: 8px 12px;
-      font-size: 15px;
+@media screen and (max-width: 768px) {
+   .subtitle {
+    font-size: 27px;
   }
 }

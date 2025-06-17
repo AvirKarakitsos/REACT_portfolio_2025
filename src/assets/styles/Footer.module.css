@@ -40,7 +40,17 @@
         position: static;
         transform: translateX(0);
     }
+}
 
+@media screen and (max-width: 768px) {
+    .section {
+        height: 250px;
+        flex-direction: column;
+        align-items: stretch;
+    }
 
-
+    .listMedia {
+        justify-content: center;
+    }
+    
 }

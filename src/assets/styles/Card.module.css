@@ -51,15 +51,3 @@
     }
 
 }
-
-@media screen and (max-width: 750px) {
-    .image {
-        height: 185px;
-    }
-
-    .box {
-        height: 340px;
-        padding: 10px 10px 0 10px;
-        transition: height 1250ms;
-    }
-}
