@@ -29,8 +29,8 @@ function Header() {
 
 			<nav className={styles.navbar}>	
 				<ul className={!open 
-					? `${styles.listNavbar} ${styles.anchor}`
-					: `${styles.listNavbar} ${styles.anchor} ${styles.slide} ${theme === "light" ? "bg-light-1" : "bg-darker-2"}`}>
+					? `${styles.listNavbar}  ${styles.anchor} ${theme === "light" ? "bg-light-1" : "bg-darker-2"}`
+					: `${styles.listNavbar}  ${styles.anchor} ${styles.slide} ${theme === "light" ? "bg-light-1" : "bg-darker-2"}`}>
 					<li><a className="no-decoration" href='#about-me'>{translate(lang).header.about}</a></li>
 					<li><a className="no-decoration" href='#skill'>{translate(lang).header.skill}</a></li>
 					<li><a className="no-decoration" href='#project'>{translate(lang).header.projects}</a></li>
@@ -50,7 +50,7 @@ function Header() {
 					}
 					<li className={styles.buttonContainer}>
 						<button
-							className={`${styles.button} bg-dark`}
+							className={`${styles.button}`}
 							onClick={() => setOpen((value) => !value)}
 						>
 							<i className="fa-solid fa-bars"></i>
