@@ -84,7 +84,7 @@ function Main() {
                 <Skills/>
 
                 <section id="project">
-                    <button className="btn">{translate(lang).main.projects.subtitle}</button>
+                    <div className="btn">{translate(lang).main.projects.subtitle}</div>
                     <h2 className={`${styles.subtitleProject} subtitle`}>{translate(lang).main.projects.content}</h2>
                     <ul className={styles.filterProject}>
                         {CATEGORIES.map(category => <li key={category._id}

@@ -8,15 +8,14 @@
 }
 
 .leftPart {
-    width: 37%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    row-gap: 25px;
 }
 
 .rightPart {
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -27,4 +26,38 @@
     font-size: 20px;
     line-height: 27px;
     color: grey;
+}
+
+@media screen and (max-width: 1024px) {
+    .mainContainer {
+        margin: 100px 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .leftPart {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 50px;
+    }
+
+    .leftPart h2 {
+        width: 50%;
+    }
+
+    .subcontent{
+        width: 50%;
+        font-size: 18px;
+        line-height: 25px;
+        color: grey;
+    }
+
+    .rightPart {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
 }

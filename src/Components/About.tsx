@@ -10,7 +10,7 @@ function About() {
     
     return(
         <div id='about-me' className={styles.mainContainer}>
-            <button className="btn">{translate(lang).main.about.tab}</button>
+            <div className="btn">{translate(lang).main.about.tab}</div>
             
             <div className={styles.container}>
                 
@@ -20,12 +20,12 @@ function About() {
                 </div>
                 <div className={styles.rightPart}>
                     <div>
-                        <h3 className={"subtitle"}>{translate(lang).main.about.title_1}</h3>
-                        <p className="content">{translate(lang).main.about.content_1}</p>
+                        <h3 className="subtitle">{translate(lang).main.about.title_1}</h3>
+                        <p className={styles.content}>{translate(lang).main.about.content_1}</p>
                     </div>
                     <div>
-                        <h3 className={"subtitle"}>{translate(lang).main.about.title_2}</h3>
-                        <p className="content">{translate(lang).main.about.content_2}</p>
+                        <h3 className="subtitle">{translate(lang).main.about.title_2}</h3>
+                        <p className={styles.content}>{translate(lang).main.about.content_2}</p>
                     </div>
                 </div>
             </div>

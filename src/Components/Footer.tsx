@@ -1,17 +1,15 @@
 import styles from '../assets/styles/Footer.module.css'
 import { useContext } from "react"
-import { ThemeContext } from "../utils/context/ThemeContext"
 import { LanguageContext } from '../utils/context/LanguageContext'
-import logo from '../assets/images/logo_dark_mode.png'
+import logo from '../assets/images/logo_dark.png'
 import { translate } from '../utils/common'
-import { LanguageContextType, ThemeContextType } from '../utils/types/context'
+import { LanguageContextType } from '../utils/types/context'
 
 function Footer() {
-	const {theme} = useContext(ThemeContext) as ThemeContextType
 	const {lang} = useContext(LanguageContext) as LanguageContextType
 
     return(
-        <footer id="footer" className={`${styles.section}  ${theme === "light" ? "" : "bg-darker-1 color-white"}`}>
+        <footer id="footer" className={styles.section}>
 
 			<div className={styles.listInfo}>
 				<img src={logo} alt="logo" height={50} width={50} />

@@ -12,12 +12,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    row-gap: 50px;
 }
 
 .video {
     height: 480px;
-    width: 720px;
+    max-width: 720px;
+    width: 100%;
     border-radius: 10px;
     border: 1px solid #000;
 }
@@ -29,4 +29,27 @@
     justify-content: center;
     align-items: center;
     row-gap: 80px;
+}
+
+.content {
+    font-size: 18px;
+    line-height: 21px;
+    color: grey;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .mainContainer {
+       margin: 100px 0;
+    }
+
+    .container {
+        column-gap: 35px;
+    }
+
+    .content {
+        font-size: 17px;
+    }   
+
 }

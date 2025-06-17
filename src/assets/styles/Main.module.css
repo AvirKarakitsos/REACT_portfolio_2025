@@ -139,7 +139,7 @@
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-items: center;
+    justify-content: space-between;
     gap: 25px 20px;
     cursor: pointer;
 }
@@ -169,15 +169,20 @@
 .sort {
     display: none;
 }
+
 .iconeTitle {
     margin-left: 5px;
     font-size: 15px;
     font-style: italic;
   }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 70px 35px 50px 35px;
+    }
+
     .title {
-        font-size: 70px;
+        font-size: 85px;
     }
 
     .subtitle {
@@ -185,18 +190,7 @@
     }
 
     .boxContainer {
-        margin-top: 50px;
-        padding: 0;
-        grid-template-columns: 1fr;
-        row-gap: 35px;
-    }
-    @keyframes frameStatic {
-        0% {
-            transform: translate(0);
-        }
-        100% {
-            transform: translate(0);
-        }
+         justify-content: center;
     }
 }
 

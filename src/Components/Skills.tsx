@@ -11,7 +11,7 @@ function Skills() {
 
     return(
         <div id='skill' className={styles.mainContainer}>
-            <button className="btn">{translate(lang).main.skills.tab}</button>
+            <div className="btn">{translate(lang).main.skills.tab}</div>
             
             <div className={styles.container}>
                 

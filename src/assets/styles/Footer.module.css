@@ -30,3 +30,17 @@
     display: flex;
     column-gap: 25px;
 }
+
+@media screen and (max-width: 1024px) {
+    .section {
+        justify-content: space-between;
+    }
+    
+    .listMedia {
+        position: static;
+        transform: translateX(0);
+    }
+
+
+
+}
