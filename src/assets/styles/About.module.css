@@ -55,6 +55,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .mainContainer {
+        margin: 0px 0 100px 0;
+    }
+
      .container {
         flex-direction: column;
     }

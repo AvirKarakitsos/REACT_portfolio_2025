@@ -197,6 +197,28 @@
 }
 
 @media screen and (max-width: 768px) {
+    .up {
+        height: 50%;
+        margin-bottom: 70px;
+        padding-bottom: 0px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .leftContent {
+        display: none
+    }
+
+    .rightContent {
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        column-gap: 25px;
+    }
+
+    .linksContainer {
+        height: 20%;
+    }
+
     .linkItem{
         position: static;
     }
