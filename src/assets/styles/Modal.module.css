@@ -21,6 +21,7 @@
 
 .media{
     width: 720px;
+    aspect-ratio: 16 / 9;
 }
 
 .rightPart{
@@ -36,22 +37,31 @@
 }
 
 .tag, .link {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 
 @media screen and (max-width: 1080px) {
+    .modal {
+        width: 90%;
+    }
+
+    .media {
+        max-width: 720px;
+        width: 65%;
+    }
+
+    .rightPart {
+        width: 35%;
+    }
+
     .container {
         padding: 15px;
         column-gap: 30px;
     }
 
-   .media{
-        width: 480px;
-    }
-
     .content{
-        font-size: 15px;
+        font-size: 16px;
     }
 }
 
@@ -62,11 +72,21 @@
         row-gap: 25px;
     }
 
+    .media {
+        width: 100%;
+    }
+    
     .rightPart{
         width: 100%;
     }
 
     .title {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content {
+        text-align: justify;
     }
 }
