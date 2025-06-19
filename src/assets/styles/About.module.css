@@ -15,9 +15,9 @@
 }
 
 .video {
-    height: 480px;
     max-width: 720px;
     width: 100%;
+    aspect-ratio: 16 / 9;
     border-radius: 10px;
     border: 1px solid #000;
 }
@@ -61,10 +61,6 @@
 
      .container {
         flex-direction: column;
-    }
-
-    .video {
-        height: 300px;
     }
 
     .rightPart {

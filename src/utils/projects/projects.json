@@ -10,7 +10,7 @@
         "content":[
             {
                 "language":"fr",
-                "text":"Site immobilier des appartements dont j’étais responsable à Fianarantsoa, à Madagascar. Site codé en React, j’ai pu utiliser la base d’un code réalisé lors de ma formation Openclassrooms. Durant ce projet j'ai pu apprendre les bases de React avec la construction du code à l'aide de composants, l’utilisation de hooks et de la librairie react-router-dom. A noter le style du projet codé de SCSS avec l’architecture BEM."
+                "text":"Site immobilier des appartements dont j’étais responsable à Fianarantsoa, Madagascar. Site codé en React. La base du code a été réalisé lors de ma formation Openclassrooms. Durant ce projet j'ai pu apprendre les bases de React: utilisaiton de composants réutilisables, des hooks et de la librairie react-router-dom. Le design du projet utilise SCSS avec l’architecture BEM."
             },
             {
                 "language":"en",
@@ -31,7 +31,7 @@
         "content":[
             {
                 "language":"fr",
-                "text":"Réalisation de la partie backend d'un site de notation de livres. Création d'une RestAPI. Travailler avec Express JS permet de comprendre les différentes étapes pour coder la partie serveur : création des routes, des controllers, des models... Au final ce projet m'a permis d'utiliser plusieurs librairies comme pour l'authentification et la sécurité du site. Mais également comment traiter une image avec les libraires multer et sharp."
+                "text":"Réalisation de la partie backend d'un site de notation de livres. Création d'une API REST avec Express JS: création des routes, des controllers, des models... Au final ce projet m'a permis d'utiliser des librairies pour l'authentification et la sécurité du site. Mais également comment traiter une image avec les libraires multer et sharp."
             },
             {
                 "language":"en",
@@ -73,7 +73,7 @@
         "content":[
             {
                 "language":"fr",
-                "text":"Site d'un e-commerce en full stack Javascript. Le côté client a été codé avec React et utilise redux afin de gérer les achats du client. Utilisation de Node JS et du framework Fastify afin de codé une API graphQL qui fournit les informations sur les produits mis en vente. La base de données est MongoDB Atlas. Le site utilise l'API Stripe pour gérer le paiement de l'utilisateur."
+                "text":"Site d'un e-commerce en full stack. Le côté client a été codé avec React et utilise redux afin de gérer les achats du client. Utilisation de Node JS et du framework Fastify afin de codé une API graphQL qui fournit les informations sur les produits mis en vente. La base de données est MongoDB Atlas. Le site utilise l'API Stripe pour gérer le paiement de l'utilisateur."
             },
             {
                 "language":"en",
