@@ -85,24 +85,24 @@
     },
     {
         "_id":5,
-        "title":"Messagerie instantanée - Fastify",
-        "date": "07-2024",
-        "imageUrl":"images/chat.png",
-        "imageUrlShort":"images/short_chat.png",
+        "title":"Management Dashboard",
+        "date": "07-2025",
+        "imageUrl":"images/bazar_mgmt.png",
+        "imageUrlShort":"images/short_bazar_mgmt.png",
         "video": "",
-        "tags":"API Websockets, socket.io, SSR, Node JS, Fastify, mySQL",
+        "tags":"React, MUI",
         "content":[
             {
                 "language":"fr",
-                "text":"Site de messagerie instantanée, avec un rendu côté serveur (SSR). Utilisation du framework Fastify, de la librairie _socket.io_. Base de données avec mySQL."
+                "text":"Outil de gestion pour gérer les différents articles d'un site de e-commerce. Le site est codé avec React et le design avec Material UI."
             },
             {
                 "language":"en",
-                "text":"Instant messaging site with server-side rendering (SSR). Built using the Fastify framework and the socket.io library. Database powered by MySQL."
+                "text":"A management tool for managing the various items on an e-commerce site. The site is coded with React and designed with Material UI."
             }
         ],
-        "link":"https://github.com/AvirKarakitsos/FASTIFY_chat_SSR",
-        "category":"node"
+        "link":"https://github.com/AvirKarakitsos/REACT_management",
+        "category":"react"
     },
     {
         "_id":6,
