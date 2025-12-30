@@ -22,5 +22,5 @@ export function sortByDate(table: ProjectType[], isTrue: boolean) {
 
     return table
 }
-export const url = "http://localhost:5173/"
-//export const url = "https://arnocotsoyannis-v2.onrender.com/"
+//export const url = "http://localhost:5173/"
+export const url = "https://acotsoyannis.onrender.com/"
